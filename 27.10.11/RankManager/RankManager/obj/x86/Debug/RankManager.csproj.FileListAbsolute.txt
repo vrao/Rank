@@ -1,0 +1,17 @@
+J:\RankManager\RankManager\RankManager\bin\Debug\RankManager.exe
+J:\RankManager\RankManager\RankManager\bin\Debug\RankManager.pdb
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\App.g.cs
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\RankManager_MarkupCompile.cache
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\RankManager.g.resources
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\RankManager.Properties.Resources.resources
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\RankManager.exe
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\RankManager.pdb
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\MainWindow.baml
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\MainWindow.g.cs
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\Model\Home.baml
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\Model\Home.g.cs
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\Model\ReportGen.baml
+J:\RankManager\RankManager\RankManager\obj\x86\Debug\Model\ReportGen.g.cs

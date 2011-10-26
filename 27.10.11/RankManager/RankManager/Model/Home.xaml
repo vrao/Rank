@@ -1,0 +1,11 @@
+﻿<Window x:Class="RankManager.Model.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="424" Width="949">
+    <Grid Background="#FF74B7E2">
+        <WrapPanel Height="39" HorizontalAlignment="Left" Margin="12,12,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="888" Background="#FF7C96A7">
+            <Button Content="Report Generation" Height="27" Name="report" Width="120" Click="report_Click" />
+            <Button Content="Admin" Height="27" Name="admin" Width="120" />
+        </WrapPanel>
+    </Grid>
+</Window>
