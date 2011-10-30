@@ -40,8 +40,8 @@ namespace RankManager.Model
         public void CallRaiseInvoice()
         {
             var date = dateBill.Text;
-            var rep = new RaiseInvoice(refNo.Text, billNo.Text, dateBill.Text, subject.Text, claimNo.Text, insurer.Text, insured.Text, policyNo.Text, dateLoss.ToString(), placeSurvey.Text, datesSurvey.Text, fees, loss, double.Parse(travelExpense.Text), 255.35, 500.32, double.Parse(localConveyance.Text), 50, double.Parse(bata.Text), 300);
-  
+            var rep = new RaiseInvoice();
+            rep.Invoice(refNo.Text, billNo.Text, dateBill.Text, subject.Text, claimNo.Text, insurer.Text, insured.Text, policyNo.Text, dateLoss.ToString(), placeSurvey.Text, datesSurvey.Text, fees, loss, double.Parse(travelExpense.Text), 255.35, 500.32, double.Parse(localConveyance.Text), 50, double.Parse(bata.Text), 300);
         }
 
         private void LossOfProfit_Click(object sender, RoutedEventArgs e)
