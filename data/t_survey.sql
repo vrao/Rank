@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 26, 2011 at 11:11 PM
+-- Generation Time: Nov 09, 2011 at 02:52 PM
 -- Server version: 5.1.53
 -- PHP Version: 5.3.4
 
@@ -18,6 +18,42 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `rank`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `photo_rate` varchar(10) NOT NULL,
+  `service_tax` varchar(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`photo_rate`, `service_tax`) VALUES
+('15', '10.3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `id` varchar(20) DEFAULT NULL,
+  `pass` varchar(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `pass`) VALUES
+('abc', '123');
 
 -- --------------------------------------------------------
 
@@ -37,19 +73,19 @@ CREATE TABLE IF NOT EXISTS `survey` (
   `date_loss` date NOT NULL,
   `place_survey` varchar(50) NOT NULL,
   `dates_survey` varchar(100) NOT NULL,
-  `loss` decimal(10,0) NOT NULL,
-  `fees` decimal(10,0) NOT NULL,
-  `travel_exp_car` decimal(10,0) NOT NULL,
-  `travel_exp_air` decimal(10,0) NOT NULL,
-  `travel_exp_boardingplace` decimal(10,0) NOT NULL,
-  `local_conveyance` decimal(10,0) NOT NULL,
-  `bata` decimal(10,0) NOT NULL,
-  `hotel_charges` decimal(10,0) NOT NULL,
-  `photo` decimal(10,0) NOT NULL,
-  `misc` decimal(10,0) NOT NULL,
-  `total_gross` decimal(10,0) NOT NULL,
-  `tax` decimal(10,0) NOT NULL,
-  `total_net` decimal(10,0) NOT NULL
+  `loss` float NOT NULL,
+  `fees` float NOT NULL,
+  `travel_exp_car` float NOT NULL,
+  `travel_exp_air` float NOT NULL,
+  `travel_exp_boardingplace` float NOT NULL,
+  `local_conveyance` float NOT NULL,
+  `bata` float NOT NULL,
+  `hotel_charges` float NOT NULL,
+  `photo` float NOT NULL,
+  `misc` float NOT NULL,
+  `total_gross` float NOT NULL,
+  `tax` float NOT NULL,
+  `total_net` float NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -57,10 +93,26 @@ CREATE TABLE IF NOT EXISTS `survey` (
 --
 
 INSERT INTO `survey` (`ref_no`, `bill_no`, `date_bill`, `subject`, `claim_no`, `insurer`, `insured`, `policy_no`, `date_loss`, `place_survey`, `dates_survey`, `loss`, `fees`, `travel_exp_car`, `travel_exp_air`, `travel_exp_boardingplace`, `local_conveyance`, `bata`, `hotel_charges`, `photo`, `misc`, `total_gross`, `tax`, `total_net`) VALUES
-('hiuh', '', '0000-00-00', '', '', '', '', '', '0000-00-00', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
-('arjun', '', '0000-00-00', '', '', '', '', '', '0000-00-00', '', '', '564', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
-('arjun', 'opjp', '0000-00-00', 'opjpo', 'poj', 'poj', 'poj', 'pj', '0000-00-00', 'poj', 'poj', '56565', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
-('123', 'oijio', '0000-00-00', 'oij', 'pj', 'p', 'poj', 'oj', '0000-00-00', 'poj', 'p', '59494', '5190', '7979', '0', '0', '255', '989', '50', '797', '300', '0', '0', '0'),
-('345', 'yuuy', '0000-00-00', 'yfu', 'fu', 'fuy', 'fuyf', 'fuy', '0000-00-00', 'uyf', 'uy', '7887', '4500', '88', '0', '0', '255', '787', '50', '78', '300', '6058', '624', '6682'),
-('234', 'jiop', '0000-00-00', 'adasd', 'popok', 'pokpo', 'pokp', 'pkpo', '0000-00-00', 'oiio', 'oijio', '89498', '5790', '984984', '0', '0', '255', '98494', '50', '948', '300', '1090821', '112355', '1203176'),
-('2323', 'oiioj', '0000-00-00', 'iojoij', 'oi', 'jo', 'oj', 'ij', '0000-00-00', 'o', 'ioj', '84984', '5700', '498', '0', '0', '255', '5', '50', '615', '300', '7423', '765', '8188');
+('abc/21/10', '5564', '0000-00-00', '665', '262', '66', '646', '646', '0000-00-00', '646', '646', 98766.6, 5975.33, 656, 0, 0, 255.35, 646, 50, 646, 300, 17572.7, 1809.99, 19382.7),
+('abc/21/10', '5564', '0000-00-00', '665', '262', '66', '646', '646', '0000-00-00', '646', '646', 98766.6, 197533, 656, 0, 0, 255.35, 646, 50, 646, 300, 209131, 21540.5, 230671),
+('abc/21/10', '5564', '0000-00-00', '665', '262', '66', '646', '646', '0000-00-00', '646', '646', 98766.6, 1100, 656, 0, 0, 255.35, 646, 50, 646, 300, 12697.3, 1307.83, 14005.2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `test`
+--
+
+CREATE TABLE IF NOT EXISTS `test` (
+  `name` varchar(10) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `test`
+--
+
+INSERT INTO `test` (`name`) VALUES
+('arjun'),
+('prasanth'),
+('maha'),
+('arjun');
